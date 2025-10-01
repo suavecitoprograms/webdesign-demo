@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap');
+/* GLOBAL */
+*, *::before, *::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Inter", sans-seri;
+    font-size: 12px;
+    font-weight: 400;
+}
+/* 
+* {
+    border: 1px solid red;
+} 
+*/
+
+/* HEADER*/
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-container-left, .header-container-right {
+    display: flex;
+    list-style-type: none;
+    padding: 1rem;
+    gap: 1rem;
+    align-items: center;
+}
+
+/* HERO */
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* TEXT */
+    color: white;
+    text-shadow: black;
+    font-size: 15px;
+    /* PBM */
+    padding: 3rem 6rem;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    /*  */
+    background-image: url("./images/Hero\ Background\ 2.jpg");
+    background-size: cover;
+}
+
+
+.hero-container-definition h1 {
+    font-size: 36px;
+}
+
+.hero-container-cta {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: .5rem;
+}
+
+.hero-container-cta button {
+    font-family: inherit;
+    font-size: inherit;
+    text-shadow: inherit;
+    color: inherit;
+    padding: 1rem;
+    background-color: transparent;
+    border: 3px solid 555;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.hero-container-cta button:hover {
+    background-color: #55555544;
+    color: white;
+
+}
+
+/* CONTENT DIVIDER */
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 2rem;
+    gap: 5rem;
+    flex-wrap: wrap;
+}
+
+.content-container-divider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+}
+
+.content-container-divider p {
+    font-size: 15px;
+}
+
+
+.content-container-divider h3 {
+    font-size: 25px;
+}
+
+.content-container-horses {
+    display: flex;
+    gap: 1rem;
+}
+
+.content-container-horses .horse{
+    width: 20rem;
+    height: 40rem;
+    box-shadow: black;
+}
+
+.content-container-horses #akhal{
+    background-image: url(./images/Horses/Akhal-Teke.webp);
+    background-size: cover;
+    background-position: 50% 50%;
+    transform: .2s;
+}
